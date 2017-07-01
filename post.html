@@ -5,12 +5,20 @@
     <title>我的博客</title>
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="MyBlogCss.css">
+    <script>
+        window.onload=function () {
+            var audio = document.getElementById('bg-music');
+            audio.play();
+        }
+    </script>
 </head>
 <body>
 <!-- 头部部分 -->
+<audio src="yanyuan.mp3"></audio>
+<audio style="display:none; height: 0" id="bg-music" loop="loop" preload="auto" src='yanyuan.mp3'></audio>
 <div class="header">
     <div class="logo">
-        Girls Coding Day
+        走自己的路，让别人打车去吧！
     </div>
     <div class="nav">
         <div class="nav-con">
@@ -48,7 +56,7 @@
         <div class="product">
             <div class="a">
                 <img src="images/me.jpg">
-                <div class="a1">个人图片</div>
+                <div class="a1">图片</div>
             </div>
             <div class="b">
                 <div class="b1">最新动态</div>
