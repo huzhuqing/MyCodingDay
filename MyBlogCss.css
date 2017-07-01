@@ -19,30 +19,29 @@ ul li a{
     background: url("images/mybg.jpg") no-repeat center top/cover;
 }
 .nav{
-    height: 80px;
-    /*background: pink;*/
-    background: #E2C1B3;
+    height: 40px;
+    /*background: #E2C1B3;*/
 }
 .nav-con{
     width:980px;
-    height:80px;
+    height:40px;
     margin: 0 auto;
 }
 .nav-con ul li{
-    height:80px;
+    height:40px;
     float:left;
 }
 .nav-con ul li a{
-    height:80px;
-    font:700 28px/80px 微软雅黑;
-    color: deeppink;
+    height:40px;
+    font:20px/40px 微软雅黑;
+    color: #c5bcdd;
     padding:0 20px ;
 }
 .nav-con ul li a:hover{
-    color:#00aa00;
+    color:#000;
 }
 .main{
-    background: #E2C1B3;
+    /*background: #E2C1B3;*/
 }
 .one{
     width:980px;
@@ -100,7 +99,7 @@ ul li a{
     display:inline-block;
     height:200px;
     width: 300px;
-    border:solid 1px #fff;
+    border:solid 1px #aaa;
     margin-right:25px;
     float:left;
     position:relative;
@@ -124,7 +123,7 @@ ul li a{
     display:inline-block;
     height:200px;
     width:374px;
-    border:solid 1px #fff;
+    border:solid 1px #aaa;
     position:relative;
 }
 .three .product .b .b1{
@@ -152,7 +151,7 @@ ul li a{
     display:inline-block;
     height:200px;
     width: 250px;
-    border:solid 1px #fff;
+    border:solid 1px #aaa;
     float:right;
     position:relative;
 }
@@ -191,8 +190,8 @@ ul li a{
 }
 .bottom{
     height:300px;
-    background: #E2C1B3;
-    border: 1px dashed #fff;
+    /*background: #E2C1B3;*/
+    border: 1px dashed #eee;
     font-size: 80px;
     line-height: 300px;
     text-align: center;
@@ -212,7 +211,7 @@ ul li a{
 }
 .bot{
     height:50px;
-    background: #E2C1B3;
+    /*background: #E2C1B3;*/
 }
 .bot ul{
     height: 50px;
@@ -230,5 +229,5 @@ ul li a{
     font-size: 40px;
     line-height: 50px;
     text-align: center;
-    color: deeppink;
+    color: #aaa;
 }

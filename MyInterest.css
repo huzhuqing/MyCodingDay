@@ -19,34 +19,32 @@ ul li a{
     background: url("images/mybg.jpg") no-repeat center top/cover;
 }
 .nav{
-    height: 80px;
-    /*background: pink;*/
-    background: #E2C1B3;
+    height: 40px;
+    /*background: #E2C1B3;*/
 }
 .nav-con{
     width:980px;
-    height:80px;
+    height:40px;
     margin: 0 auto;
 }
 .nav-con ul li{
-    height:80px;
+    height:40px;
     float:left;
 }
 .nav-con ul li a{
-    height:80px;
-    font:700 28px/80px 微软雅黑;
-    color: deeppink;
+    height:40px;
+    font:20px/40px 微软雅黑;
+    color: #c5bcdd;
     padding:0 20px ;
 }
 .nav-con ul li a:hover{
-    color:#00aa00;
+    color:#000;
 }
 .main{
-    background: #E2C1B3;
+    /*background: #E2C1B3;*/
     height: 600px;
 }
 .myVideo{
-    /*background: pink;*/
     width: 980px;
     height: 560px;
     margin:0px auto;
@@ -79,7 +77,7 @@ video{
 input{
     width: 40px;
     height: 20px;
-    background: deeppink;
+    background: #eee;
 }
 .zt{
     position: absolute;
