@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>我的兴趣</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="MyInterest.css">
+</head>
+<body>
+    <!-- 头部部分 -->
+    <div class="header">
+        <div class="logo">
+            Girls Coding Day
+        </div>
+        <div class="nav">
+            <div class="nav-con">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="post.html">博客</a></li>
+                    <li><a href="interest.html">我的爱好</a></li>
+                    <li><a href="#">日志</a></li>
+                    <li><a href="#">联系我</a></li>
+                    <li><a href="#">关于我</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--视频-->
+    <div class="main">
+        <div class="myVideo">
+            <video src="video/fun.mp4"></video>
+            <input type="button" value="播放" class="bf">
+            <input type="button" value="暂停" class="zt">
+            <div class="time">
+                <span class="cur-time">00:00:00</span><span>/</span><span class="tol-time">00:00:00</span>
+            </div>
+            <div class="progress">
+                <div class="pro"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var bf=document.querySelector(".bf");
+    var zt=document.querySelector(".zt");
+    var myvideo=document.querySelector("video");
+    var curTime=document.querySelector(".cur-time");
+    var tolTime=document.querySelector(".tol-time");
+    var curPro=document.querySelector(".pro");
+
+    var currentT=0;
+    var totalT=0;
+    bf.onclick=function () {
+        myvideo.play();
+    }
+    zt.onclick=function () {
+        myvideo.pause();
+    }
+    myvideo.oncanplay=function () {
+        totalT=myvideo.duration;
+        var tHours=Math.floor(totalT/3600);
+        tHours=tHours<10?"0"+tHours:tHours;
+        var tMinute=Math.floor(totalT%3600/60);
+        tMinute=tMinute<10?"0"+tMinute:tMinute;
+        var tSecond=Math.floor(totalT%60);
+        tSecond=tSecond<10?"0"+tSecond:tSecond;
+        tolTime.innerHTML=tHours+":"+tMinute+":"+tSecond;
+    }
+    myvideo.ontimeupdate=function () {
+        currentT=myvideo.currentTime;
+        var cHours=Math.floor(currentT/3600);
+        cHours=cHours<10?"0"+cHours:cHours;
+        var cMinute=Math.floor(currentT%3600/60);
+        cMinute=cMinute<10?"0"+cMinute:cMinute;
+        var cSecond=Math.floor(currentT%60);
+        cSecond=cSecond<10?"0"+cSecond:cSecond;
+        curTime.innerHTML=cHours+":"+cMinute+":"+cSecond;
+        var proWidth=currentT/totalT*100;
+        curPro.style.width=proWidth+"%";
+    }
+</script>
