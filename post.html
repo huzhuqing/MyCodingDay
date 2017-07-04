@@ -7,15 +7,14 @@
     <link rel="stylesheet" href="MyBlogCss.css">
     <script>
         window.onload=function () {
-            var audio = document.getElementById('bg-music');
-            audio.play();
+            var myPlayer=document.querySelector("audio");
+            myPlayer.play();
         }
     </script>
 </head>
 <body>
 <!-- 头部部分 -->
-<audio src="yanyuan.mp3"></audio>
-<audio style="display:none; height: 0" id="bg-music" loop="loop" preload="auto" src='yanyuan.mp3'></audio>
+<audio style="display:none; height: 0" id="bg-music" src='yanyuan.mp3'></audio>
 <div class="header">
     <div class="logo">
         走自己的路，让别人打车去吧！
@@ -52,69 +51,40 @@
             <img src="images/r4.jpg" class="r1">
         </div>
     </div>
-    <div class="three">
-        <div class="product">
-            <div class="a">
-                <img src="images/me.jpg">
-                <div class="a1">图片</div>
-            </div>
-            <div class="b">
-                <div class="b1">最新动态</div>
-                <div class="b2">
-                    <ul>
-                        <li class="li1">活动</li>
-                        <li>正在参加Girls Coding Day!</li>
-                        <li>正在参加Girls Coding Day!</li>
-                        <li>正在参加Girls Coding Day!</li>
-                        <li>正在参加Girls Coding Day!</li>
-                        <li>正在参加Girls Coding Day!</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="c">
-                <div class="c1">我的兴趣</div>
-                <div class="c2">
-                    <ul>
-                        <li>美食</li>
-                        <li>睡觉</li>
-                        <li>听歌</li>
-                        <li>做网页</li>
-                    </ul>
-                </div>
-                <div class="c3">
-                    为从菜鸟转变成大神而努力,哈哈哈!
-                </div>
-            </div>
+    <div class="two">
+        <!--字体图标-->
+        <div class="bot">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-weixin" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.weibo.com/2695376141/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1">
+                        <i class="fa fa-weibo" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:360632702@qq.com?subject=Mail from Our Site">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
 <!-- 底部 -->
 <div class="bottom">
-    Ending
-    <div class="b1">
+    <div class="bottom1">
+        <p><b>INTEREST IN WEB DESIGN, DEVELOP</b></p>
     </div>
-    <div class="b2">
+    <div class="bottom1">
+        <p>Living in the amazing China.</p>
     </div>
-</div>
-<!--字体图标-->
-<div class="bot">
-    <ul>
-        <li>
-            <a href="#">
-                <i class="fa fa-weixin" aria-hidden="true"></i>
-            </a>
-        </li>
-        <li>
-            <a href="http://www.weibo.com/2695376141/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1">
-                <i class="fa fa-weibo" aria-hidden="true"></i>
-            </a>
-        </li>
-        <li>
-            <a href="mailto:360632702@qq.com?subject=Mail from Our Site">
-                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-            </a>
-        </li>
-    </ul>
+    <div class="bottom1">
+        <p>hello@qq.com</p>
+    </div>
 </div>
 </body>
 </html>
