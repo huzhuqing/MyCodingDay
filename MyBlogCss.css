@@ -101,7 +101,7 @@ ul li a{
     position: absolute;
     top:50%;
     margin-top: -25px;
-    left: 460px;
+    left: 35%;
 }
 .bot ul{
     height: 50px;
@@ -125,7 +125,7 @@ ul li a{
     position: relative;
 }
 .bottom1{
-    width: 400px;
+    width: 30%;
     height: 100px;
     float: left;
     margin-left: 30px;
